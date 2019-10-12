@@ -1,0 +1,71 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 176 168)
+	(text "mux" (rect 5 0 33 13)(font "Arial" (font_size 8)))
+	(text "inst" (rect 48 80 68 92)(font "Arial" ))
+	(port
+		(pt 80 0)
+		(input)
+		(text "sel[0..1]" (rect 0 0 51 13)(font "Arial" (font_size 8)))
+		(text "sel[0..1]" (rect 72 17 85 68)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 0)(pt 80 17)(line_width 3))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "add" (rect 0 0 24 13)(font "Arial" (font_size 8)))
+		(text "add" (rect 21 27 45 40)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "multi2" (rect 0 0 40 13)(font "Arial" (font_size 8)))
+		(text "multi2" (rect 21 43 61 56)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "sub" (rect 0 0 23 13)(font "Arial" (font_size 8)))
+		(text "sub" (rect 21 59 44 72)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "div2" (rect 0 0 27 13)(font "Arial" (font_size 8)))
+		(text "div2" (rect 21 75 48 88)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 112 80)
+		(output)
+		(text "s" (rect 0 0 7 13)(font "Arial" (font_size 8)))
+		(text "s" (rect 84 75 91 88)(font "Arial" (font_size 8)))
+		(line (pt 112 80)(pt 96 80))
+	)
+	(drawing
+		(rectangle (rect 16 16 96 96))
+	)
+)
