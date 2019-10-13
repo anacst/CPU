@@ -1,5 +1,5 @@
 Assembler report for CPU
-Sat Oct 12 19:24:43 2019
+Sun Oct 13 11:38:00 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -37,11 +37,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Oct 12 19:24:43 2019 ;
+; Assembler Status      ; Successful - Sun Oct 13 11:38:00 2019 ;
 ; Revision Name         ; CPU                                   ;
-; Top-level Entity Name ; uc                                    ;
-; Family                ; Cyclone IV GX                         ;
-; Device                ; EP4CGX15BF14C6                        ;
+; Top-level Entity Name ; fpga                                  ;
+; Family                ; Cyclone IV E                          ;
+; Device                ; EP4CE115F29C7                         ;
 +-----------------------+---------------------------------------+
 
 
@@ -91,9 +91,9 @@ applicable agreement for further details.
 +----------------+------------------+
 ; Option         ; Setting          ;
 +----------------+------------------+
-; Device         ; EP4CGX15BF14C6   ;
-; JTAG usercode  ; 0x000BEE4F       ;
-; Checksum       ; 0x000BEE4F       ;
+; Device         ; EP4CE115F29C7    ;
+; JTAG usercode  ; 0x00581A63       ;
+; Checksum       ; 0x00581A63       ;
 +----------------+------------------+
 
 
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Oct 12 19:24:42 2019
+    Info: Processing started: Sun Oct 13 11:37:54 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off CPU -c CPU
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 577 megabytes
-    Info: Processing ended: Sat Oct 12 19:24:43 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 551 megabytes
+    Info: Processing ended: Sun Oct 13 11:38:00 2019
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

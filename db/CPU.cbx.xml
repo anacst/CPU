@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CPU">
-		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|rom:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_9o91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|fpga|cpu:cpu|muxRg:inst6|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_l7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|fpga|cpu:cpu|rom:inst89|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_qf91.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
