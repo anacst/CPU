@@ -128,14 +128,14 @@ mem[3] <= rom:inst89.q[3]
 mem[2] <= rom:inst89.q[2]
 mem[1] <= rom:inst89.q[1]
 mem[0] <= rom:inst89.q[0]
-R1[3] <= register:Rg1.Q[3]
-R1[2] <= register:Rg1.Q[2]
-R1[1] <= register:Rg1.Q[1]
-R1[0] <= register:Rg1.Q[0]
-R2[3] <= register:Rg2.Q[3]
-R2[2] <= register:Rg2.Q[2]
-R2[1] <= register:Rg2.Q[1]
-R2[0] <= register:Rg2.Q[0]
+R1[3] <= register:reg1.Q[3]
+R1[2] <= register:reg1.Q[2]
+R1[1] <= register:reg1.Q[1]
+R1[0] <= register:reg1.Q[0]
+R2[3] <= register:reg2.Q[3]
+R2[2] <= register:reg2.Q[2]
+R2[1] <= register:reg2.Q[1]
+R2[0] <= register:reg2.Q[0]
 
 
 |fpga|cpu:cpu|counter:inst2
@@ -151,25 +151,24 @@ Preset[3] => inst4.PRESET
 Preset[2] => inst3.PRESET
 Preset[1] => inst1.PRESET
 Preset[0] => inst.PRESET
-Reset => inst10.IN0
-Reset => inst11.IN0
-Reset => inst12.IN0
-Reset => inst13.IN0
-Reset => inst14.IN0
-Reset => inst15.IN0
-Reset => inst16.IN0
-Reset => inst17.IN0
-Clear[7] => inst17.IN1
-Clear[6] => inst16.IN1
-Clear[5] => inst15.IN1
-Clear[4] => inst14.IN1
-Clear[3] => inst13.IN1
-Clear[2] => inst12.IN1
-Clear[1] => inst11.IN1
-Clear[0] => inst10.IN1
-mem[11] => 8888888888.IN0
-mem[10] => 8888888888.IN1
-Clock => inst9.IN1
+Clear[7] => inst8.ACLR
+Clear[6] => inst7.ACLR
+Clear[5] => inst6.ACLR
+Clear[4] => inst5.ACLR
+Clear[3] => inst4.ACLR
+Clear[2] => inst3.ACLR
+Clear[1] => inst1.ACLR
+Clear[0] => inst.ACLR
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst3.CLK
+Clock => inst4.CLK
+Clock => inst5.CLK
+Clock => inst6.CLK
+Clock => inst7.CLK
+Clock => inst8.CLK
+mem[11] => ~NO_FANOUT~
+mem[10] => ~NO_FANOUT~
 
 
 |fpga|cpu:cpu|debouncer:inst1
@@ -222,19 +221,19 @@ mem[15] => ClkRg2.DATAIN
 mem[14] => ClkRg1.DATAIN
 mem[13] => ~NO_FANOUT~
 mem[12] => Selector.DATAIN
-mem[11] => inst5.IN1
 mem[11] => inst.IN0
 mem[11] => inst3.IN1
-mem[10] => inst7.IN0
+mem[11] => inst5.IN1
 mem[10] => inst4.IN0
 mem[10] => inst3.IN0
-mem[9] => Operation[1].DATAIN
-mem[8] => Operation[0].DATAIN
+mem[10] => inst7.IN0
+mem[9] => Operation[0].DATAIN
+mem[8] => Operation[1].DATAIN
 mem[7] => ~NO_FANOUT~
 mem[6] => ~NO_FANOUT~
 mem[5] => ~NO_FANOUT~
 mem[4] => ~NO_FANOUT~
-mem[3] => inst16.IN0
+mem[3] => inst11.IN0
 mem[3] => inst15.IN0
 mem[2] => inst18.IN0
 mem[2] => inst14.IN0
@@ -243,21 +242,27 @@ mem[1] => inst13.IN0
 mem[0] => inst22.IN0
 mem[0] => inst12.IN0
 ClkRg2 <= mem[15].DB_MAX_OUTPUT_PORT_TYPE
-ClearMC <= inst23333.DB_MAX_OUTPUT_PORT_TYPE
-ResetAll => inst23333.IN0
-ResetAll => inst21111.IN0
 ClearRg <= inst21111.DB_MAX_OUTPUT_PORT_TYPE
+ResetAll => inst21111.IN0
+ResetAll => inst10.IN2
+ResetAll => inst17.IN2
+ResetAll => inst21.IN2
+ResetAll => inst19.IN2
+ResetAll => inst16[3].IN2
+ResetAll => inst16[2].IN2
+ResetAll => inst16[1].IN2
+ResetAll => inst16[0].IN2
 Selector <= mem[12].DB_MAX_OUTPUT_PORT_TYPE
-Clear[7] <= 777[0].DB_MAX_OUTPUT_PORT_TYPE
-Clear[6] <= 777[1].DB_MAX_OUTPUT_PORT_TYPE
-Clear[5] <= 777[2].DB_MAX_OUTPUT_PORT_TYPE
-Clear[4] <= 777[3].DB_MAX_OUTPUT_PORT_TYPE
-Clear[3] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-Clear[2] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
-Clear[1] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
-Clear[0] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
-Operation[1] <= mem[9].DB_MAX_OUTPUT_PORT_TYPE
-Operation[0] <= mem[8].DB_MAX_OUTPUT_PORT_TYPE
+Clear[7] <= inst16[0].DB_MAX_OUTPUT_PORT_TYPE
+Clear[6] <= inst16[1].DB_MAX_OUTPUT_PORT_TYPE
+Clear[5] <= inst16[2].DB_MAX_OUTPUT_PORT_TYPE
+Clear[4] <= inst16[3].DB_MAX_OUTPUT_PORT_TYPE
+Clear[3] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Clear[2] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Clear[1] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+Clear[0] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Operation[1] <= mem[8].DB_MAX_OUTPUT_PORT_TYPE
+Operation[0] <= mem[9].DB_MAX_OUTPUT_PORT_TYPE
 Preset[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 Preset[2] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 Preset[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
@@ -520,7 +525,7 @@ q_a[14] <= ram_block1a14.PORTADATAOUT
 q_a[15] <= ram_block1a15.PORTADATAOUT
 
 
-|fpga|cpu:cpu|register:Rg1
+|fpga|cpu:cpu|register:reg1
 Q[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -529,10 +534,8 @@ CLR => inst.ACLR
 CLR => inst1.ACLR
 CLR => inst2.ACLR
 CLR => inst3.ACLR
-CLK => inst.CLK
-CLK => inst1.CLK
-CLK => inst2.CLK
-CLK => inst3.CLK
+CLK => inst5.IN0
+SEL => inst5.IN1
 D[3] => inst3.DATAIN
 D[2] => inst2.DATAIN
 D[1] => inst1.DATAIN
@@ -832,7 +835,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|fpga|cpu:cpu|register:Rg2
+|fpga|cpu:cpu|register:reg2
 Q[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -841,10 +844,8 @@ CLR => inst.ACLR
 CLR => inst1.ACLR
 CLR => inst2.ACLR
 CLR => inst3.ACLR
-CLK => inst.CLK
-CLK => inst1.CLK
-CLK => inst2.CLK
-CLK => inst3.CLK
+CLK => inst5.IN0
+SEL => inst5.IN1
 D[3] => inst3.DATAIN
 D[2] => inst2.DATAIN
 D[1] => inst1.DATAIN
@@ -1081,7 +1082,7 @@ A[0] => inst32.IN0
 A[0] => inst50.IN0
 
 
-|fpga|7seg:inst
+|fpga|7seg:HEX5
 S[6] <= inst55.DB_MAX_OUTPUT_PORT_TYPE
 S[5] <= inst45.DB_MAX_OUTPUT_PORT_TYPE
 S[4] <= inst44.DB_MAX_OUTPUT_PORT_TYPE
@@ -1127,7 +1128,7 @@ A[0] => inst32.IN0
 A[0] => inst50.IN0
 
 
-|fpga|7seg:inst1
+|fpga|7seg:HEX7
 S[6] <= inst55.DB_MAX_OUTPUT_PORT_TYPE
 S[5] <= inst45.DB_MAX_OUTPUT_PORT_TYPE
 S[4] <= inst44.DB_MAX_OUTPUT_PORT_TYPE

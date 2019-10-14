@@ -3,59 +3,27 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'cpu:cpu|debouncer:inst1|out_key'
-Slack : -5.050
-TNS   : -73.652
-
-Type  : Slow 1200mV 85C Model Setup 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : -4.140
-TNS   : -13.478
-
-Type  : Slow 1200mV 85C Model Setup 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : -4.000
-TNS   : -14.014
+Slack : -3.944
+TNS   : -90.554
 
 Type  : Slow 1200mV 85C Model Setup 'fpga_clk'
-Slack : -2.202
-TNS   : -36.491
-
-Type  : Slow 1200mV 85C Model Hold 'cpu:cpu|debouncer:inst1|out_key'
-Slack : -0.624
-TNS   : -1.574
+Slack : -2.161
+TNS   : -36.257
 
 Type  : Slow 1200mV 85C Model Hold 'fpga_clk'
-Slack : 0.008
-TNS   : 0.000
+Slack : -0.036
+TNS   : -0.036
 
-Type  : Slow 1200mV 85C Model Hold 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : 1.002
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : 1.384
+Type  : Slow 1200mV 85C Model Hold 'cpu:cpu|debouncer:inst1|out_key'
+Slack : 0.387
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'cpu:cpu|debouncer:inst1|out_key'
-Slack : -2.675
-TNS   : -10.427
-
-Type  : Slow 1200mV 85C Model Recovery 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : -0.319
-TNS   : -1.276
-
-Type  : Slow 1200mV 85C Model Recovery 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : -0.094
-TNS   : -0.376
+Slack : -3.148
+TNS   : -39.842
 
 Type  : Slow 1200mV 85C Model Removal 'cpu:cpu|debouncer:inst1|out_key'
-Slack : -0.287
-TNS   : -1.761
-
-Type  : Slow 1200mV 85C Model Removal 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : 0.232
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : 0.466
+Slack : 2.379
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fpga_clk'
@@ -64,70 +32,30 @@ TNS   : -26.130
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:cpu|debouncer:inst1|out_key'
 Slack : -2.693
-TNS   : -58.754
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : -1.285
-TNS   : -5.140
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : -1.285
-TNS   : -5.140
+TNS   : -69.034
 
 Type  : Slow 1200mV 0C Model Setup 'cpu:cpu|debouncer:inst1|out_key'
-Slack : -4.502
-TNS   : -64.418
-
-Type  : Slow 1200mV 0C Model Setup 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : -3.610
-TNS   : -11.743
-
-Type  : Slow 1200mV 0C Model Setup 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : -3.501
-TNS   : -12.231
+Slack : -3.477
+TNS   : -78.633
 
 Type  : Slow 1200mV 0C Model Setup 'fpga_clk'
-Slack : -1.915
-TNS   : -31.682
-
-Type  : Slow 1200mV 0C Model Hold 'cpu:cpu|debouncer:inst1|out_key'
-Slack : -0.489
-TNS   : -1.396
+Slack : -1.879
+TNS   : -31.496
 
 Type  : Slow 1200mV 0C Model Hold 'fpga_clk'
-Slack : 0.096
+Slack : 0.046
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : 0.917
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : 1.264
+Type  : Slow 1200mV 0C Model Hold 'cpu:cpu|debouncer:inst1|out_key'
+Slack : 0.340
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'cpu:cpu|debouncer:inst1|out_key'
-Slack : -2.310
-TNS   : -8.962
-
-Type  : Slow 1200mV 0C Model Recovery 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : -0.264
-TNS   : -1.056
-
-Type  : Slow 1200mV 0C Model Recovery 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : -0.061
-TNS   : -0.244
+Slack : -2.722
+TNS   : -34.049
 
 Type  : Slow 1200mV 0C Model Removal 'cpu:cpu|debouncer:inst1|out_key'
-Slack : -0.289
-TNS   : -1.714
-
-Type  : Slow 1200mV 0C Model Removal 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : 0.250
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : 0.462
+Slack : 2.127
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fpga_clk'
@@ -136,86 +64,38 @@ TNS   : -26.130
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:cpu|debouncer:inst1|out_key'
 Slack : -2.649
-TNS   : -57.962
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : -1.285
-TNS   : -5.140
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : -1.285
-TNS   : -5.140
+TNS   : -68.242
 
 Type  : Fast 1200mV 0C Model Setup 'cpu:cpu|debouncer:inst1|out_key'
-Slack : -2.281
-TNS   : -23.410
-
-Type  : Fast 1200mV 0C Model Setup 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : -1.922
-TNS   : -6.208
-
-Type  : Fast 1200mV 0C Model Setup 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : -1.841
-TNS   : -6.435
+Slack : -1.806
+TNS   : -31.262
 
 Type  : Fast 1200mV 0C Model Setup 'fpga_clk'
-Slack : -0.541
-TNS   : -8.757
-
-Type  : Fast 1200mV 0C Model Hold 'cpu:cpu|debouncer:inst1|out_key'
-Slack : -0.553
-TNS   : -0.553
+Slack : -0.516
+TNS   : -8.546
 
 Type  : Fast 1200mV 0C Model Hold 'fpga_clk'
-Slack : -0.203
-TNS   : -0.203
+Slack : -0.235
+TNS   : -0.235
 
-Type  : Fast 1200mV 0C Model Hold 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : 0.439
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : 0.623
+Type  : Fast 1200mV 0C Model Hold 'cpu:cpu|debouncer:inst1|out_key'
+Slack : 0.174
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'cpu:cpu|debouncer:inst1|out_key'
-Slack : -1.256
-TNS   : -4.918
-
-Type  : Fast 1200mV 0C Model Recovery 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : 0.070
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Recovery 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : 0.167
-TNS   : 0.000
+Slack : -1.503
+TNS   : -19.558
 
 Type  : Fast 1200mV 0C Model Removal 'cpu:cpu|debouncer:inst1|out_key'
-Slack : -0.006
-TNS   : -0.006
-
-Type  : Fast 1200mV 0C Model Removal 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : 0.298
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : 0.399
+Slack : 1.549
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fpga_clk'
 Slack : -3.000
-TNS   : -22.206
+TNS   : -22.140
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:cpu|debouncer:inst1|out_key'
 Slack : -1.000
-TNS   : -26.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[14]'
-Slack : -1.000
-TNS   : -4.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:cpu|rom:inst89|altsyncram:altsyncram_component|altsyncram_qf91:auto_generated|q_a[15]'
-Slack : -1.000
-TNS   : -4.000
+TNS   : -34.000
 
 ------------------------------------------------------------
